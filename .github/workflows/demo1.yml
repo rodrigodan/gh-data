@@ -18,8 +18,15 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dist-files
-          path: |
-            dist
-            package.json
+          path: dist
+          # path: |
+          #   dist
+          #   package.json
+      - name: Get build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-files
+      - name: Output contents
+        run: ls
       - name: Deploy project
         run: echo "Deploying..."
