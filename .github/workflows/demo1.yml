@@ -23,7 +23,7 @@ jobs:
           #   dist
           #   package.json
       - name: Get build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/download-artifact@v3
         with:
           name: dist-files
       - name: Output contents
