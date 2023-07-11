@@ -16,10 +16,10 @@ jobs:
         run: npm run 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
-          with:
-            name: dist-files
-            path: |
-              dist
-              package.json
+        with:
+          name: dist-files
+          path: |
+            dist
+            package.json
       - name: Deploy project
         run: echo "Deploying..."
