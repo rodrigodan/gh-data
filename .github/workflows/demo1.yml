@@ -13,7 +13,6 @@ jobs:
       - name: Test code
         run: npm run test
   build:
-
     needs: test
     runs-on: ubuntu-latest
     outputs:
